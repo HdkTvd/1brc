@@ -27,7 +27,7 @@ func main() {
 	allStations := make(map[string]City, 0)
 	allCities := make([]string, 0)
 
-	filepath := "./weather_stations.csv"
+	filepath := "./data/weather_stations.csv"
 	file, err := os.Open(filepath)
 	if err != nil {
 		log.Fatalf("Error opening file [%v]", err)
